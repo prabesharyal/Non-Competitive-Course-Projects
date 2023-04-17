@@ -1,0 +1,112 @@
+
+/* Whole Body */
+body {
+background: linear-gradient(0.25turn, rgb(129, 95, 233),rgb(0, 89, 255));
+
+margin: auto;
+color: beige;
+font-family: sans-serif;}
+
+/* Just Ttile */
+#title, #description{
+    content: block;
+    text-align: center;
+}
+
+/* Creating a Section */
+div{
+    width: 80%;
+    margin: auto;
+    padding: 5% 5% 5% 5%;
+    background-color: hsl(220, 97%, 14%);
+    border: hsl(220, 97%, 14%);
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+#survey-form{
+    text-align: left;
+    margin: auto;
+}
+
+
+/* Title of Every Input */
+#name-label, #email-label, #number-label, .dropdown-label, .gender-label, .preference-label, #text-area-label{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: hsla(220,100%,100%,70%)
+}
+
+#name, #email, #number, #dropdown, #comments {
+    width: 80%;
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    
+}
+
+.checkbox-box, .checkbox-name{
+    display: inline-block;
+    width: 15%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.radio-box, .radio-name{
+    display: inline-block;
+    width: 20%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.checkbox-name, .radio-name {
+    text-align: left;
+    margin-left: -25px;
+}
+.radio-box, .checkbox-box {
+    height: 15px;
+}
+textarea{
+    width: 80%;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .submit:hover{
+
+} */
+.submit {
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding: auto;
+    height: 30px;
+    text-align: center;
+    background: rgba(0,0,0,0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: larger;
+border: 0;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.submit:hover{
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding: auto;
+    height: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: larger;
+    display: block;
+    background: rgba(255, 255, 255,0.5);
+    border: 5px;
+    border-radius: 25px;
+    border-color: aliceblue;
+    color: rgb(0, 255, 251);
+}
+

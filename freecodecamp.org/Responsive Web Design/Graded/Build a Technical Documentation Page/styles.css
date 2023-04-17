@@ -1,0 +1,64 @@
+/* html {
+    display: block;
+} */
+html {
+    display: block;
+    position: relative;
+    height: 100%;
+    background-color: aqua;
+}
+nav{    
+    width:150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    font-size: large;
+    top : 0;
+    margin-top : 0;
+    padding-top: 0;
+  }
+
+  main{
+    margin-top : 0;
+    margin-left: 150px;   
+    background-color: bisque;
+    padding-left: 3%;
+  }
+
+  header{
+    font-size: xx-large;
+  }
+  header{
+    font-size: xx-large;
+  }
+  
+  header[class="navheader"]{
+    font-size: larger !important;
+   text-decoration: double;
+   font-weight: bold;
+  }
+
+  section {
+    font-size: large;
+  }
+
+  code {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+@media (max-width:768px) {
+    nav{    
+        position: fixed;
+        top: 0;
+      }
+    
+      main{
+        position: fixed;
+        top: 200px;
+      } 
+}

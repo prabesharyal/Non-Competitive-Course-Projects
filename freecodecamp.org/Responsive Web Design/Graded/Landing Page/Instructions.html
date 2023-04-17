@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      html,
+      body,
+      div {
+        background: #0a0a23 !important;
+        color: #fff;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        display: block;
+        background: #0a0a23;
+        color: #fff;
+      }
+      * {
+        text-shadow: none !important;
+      }
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      user agent stylesheet section {
+        display: block;
+      }
+      #learn-app-wrapper .desktop-layout {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .default-layout:only-child {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 0;
+      }
+      .page-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+        min-height: 100%;
+      }
+      .dark-palette {
+        --primary-color: var(--gray-00);
+        --secondary-color: var(--gray-05);
+        --tertiary-color: var(--gray-10);
+        --quaternary-color: var(--gray-15);
+        --quaternary-background: var(--gray-75);
+        --tertiary-background: var(--gray-80);
+        --secondary-background: var(--gray-85);
+        --primary-background: var(--gray-90);
+        --highlight-color: var(--blue-light);
+        --highlight-background: var(--blue-dark);
+        --selection-color: var(--blue-light-translucent);
+        --success-color: var(--green-light);
+        --success-background: var(--green-dark);
+        --danger-color: var(--red-light);
+        --danger-background: var(--red-dark);
+        --love-color: var(--love-light);
+        --editor-background: var(--editor-background-dark);
+      }
+      body {
+        background: var(--secondary-background);
+        color: var(--secondary-color);
+        font-family: var(--font-family-sans-serif);
+      }
+      body {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+      }
+      :root {
+        --header-height: 38px;
+        --search-box-form: 38px;
+        --lang-menu-height: 22.5rem;
+      }
+      :root {
+        --sash-size: 4px;
+      }
+      :root {
+        --theme-color: #0a0a23;
+        --yellow-gold: #ffbf00;
+        --gray-00: #fff;
+        --gray-05: #f5f6f7;
+        --gray-10: #dfdfe2;
+        --gray-15: #d0d0d5;
+        --gray-45: #858591;
+        --gray-75: #3b3b4f;
+        --gray-80: #2a2a40;
+        --gray-85: #1b1b32;
+        --gray-90: #0a0a23;
+        --purple-light: #dbb8ff;
+        --purple-dark: #5a01a7;
+        --yellow-light: #ffc300;
+        --yellow-dark: #4d3800;
+        --blue-light: #99c9ff;
+        --blue-light-translucent: rgba(153, 201, 255, 0.3);
+        --blue-dark: #002ead;
+        --blue-dark-translucent: rgba(0, 46, 173, 0.3);
+        --green-light: #acd157;
+        --blue-mid: #198eee;
+        --purple-mid: #9400d3;
+        --green-dark: #00471b;
+        --red-light: #ffadad;
+        --red-dark: #850000;
+        --love-light: #f8577c;
+        --love-dark: #f82153;
+        --editor-background-light: #fffffe;
+        --editor-background-dark: #2a2b40;
+        --focus-outline-color: var(--blue-mid);
+        --font-family-sans-serif: "Lato", sans-serif;
+        --font-family-monospace: "Hack-ZeroSlash", monospace;
+      }
+      :root,
+      :host {
+        --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+        --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+        --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+        --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+        --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+        --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+        --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+        --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+        --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+      }
+      html {
+        -webkit-font-smoothing: antialiased;
+        font-size: 18px;
+      }
+      html {
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      html {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      *:before,
+      *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      *:before,
+      *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      ::selection {
+        background-color: var(--selection-color);
+      }
+      .test-result {
+        list-style: none !important;
+      }
+      code {
+        background: #343c41;
+      }
+      two-containers {
+        margin: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="two-containers"
+      class="challenge-instructions 2022/responsive-web-design build-a-product-landing-page-project"
+    >
+      <div>
+        <section id="description">
+          <p>
+            <strong>Objective:</strong> Build an app that is functionally
+            similar to
+            <a
+              href="https://product-landing-page.freecodecamp.rocks"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >https://product-landing-page.freecodecamp.rocks</a
+            >
+          </p>
+          <p><strong>User Stories:</strong></p>
+          <ol>
+            <li>
+              Your product landing page should have a
+              <code>header</code> element with a corresponding
+              <code>id="header"</code>
+            </li>
+            <li>
+              You can see an image within the <code>header</code> element with a
+              corresponding <code>id="header-img"</code> (A logo would make a
+              good image here)
+            </li>
+            <li>
+              Within the <code>#header</code> element, you can see a
+              <code>nav</code> element with a corresponding
+              <code>id="nav-bar"</code>
+            </li>
+            <li>
+              You can see at least three clickable elements inside the
+              <code>nav</code> element, each with the class
+              <code>nav-link</code>
+            </li>
+            <li>
+              When you click a <code>.nav-link</code> button in the
+              <code>nav</code> element, you are taken to the corresponding
+              section of the landing page
+            </li>
+            <li>
+              You can watch an embedded product video with
+              <code>id="video"</code>
+            </li>
+            <li>
+              Your landing page has a <code>form</code> element with a
+              corresponding <code>id="form"</code>
+            </li>
+            <li>
+              Within the form, there is an <code>input</code> field with
+              <code>id="email"</code> where you can enter an email address
+            </li>
+            <li>
+              The <code>#email</code> input field should have placeholder text
+              to let users know what the field is for
+            </li>
+            <li>
+              The <code>#email</code> input field uses HTML5 validation to
+              confirm that the entered text is an email address
+            </li>
+            <li>
+              Within the form, there is a submit <code>input</code> with a
+              corresponding <code>id="submit"</code>
+            </li>
+            <li>
+              When you click the <code>#submit</code> element, the email is
+              submitted to a static page (use this mock URL:
+              <code>https://www.freecodecamp.com/email-submit</code>)
+            </li>
+            <li>The navbar should always be at the top of the viewport</li>
+            <li>
+              Your product landing page should have at least one media query
+            </li>
+            <li>
+              Your product landing page should utilize CSS flexbox at least once
+            </li>
+          </ol>
+          <p>
+            Fulfill the user stories and pass all the tests below to complete
+            this project. Give it your own personal style. Happy Coding!
+          </p>
+          <p>
+            <strong>Note:</strong> Be sure to add
+            <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> in your
+            HTML to link your stylesheet and apply your CSS
+          </p>
+        </section>
+      </div>
+      <!-- <hr /> -->
+    </div>
+    <div class="two-containers">
+    <ul class="challenge-test-suite">
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have a <code>header</code> element with an
+            <code>id</code> of <code>header</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have an <code>img</code> element with an
+            <code>id</code> of <code>header-img</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#header-img</code> should be a descendant of the
+            <code>#header</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#header-img</code> should have a
+            <code>src</code> attribute.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#header-img</code>’s <code>src</code> value should be a
+            valid URL (starts with <code>http</code>).</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have a <code>nav</code> element with an
+            <code>id</code> of <code>nav-bar</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#nav-bar</code> should be a descendant of the
+            <code>#header</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have at least 3 <code>.nav-link</code> elements within
+            the <code>#nav-bar</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Each <code>.nav-link</code> element should have an
+            <code>href</code> attribute.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Each <code>.nav-link</code> element should link to a corresponding
+            element on the landing page (has an <code>href</code> with a value
+            of another element's id. e.g. <code>#footer</code>).</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have a <code>video</code> or <code>iframe</code> element
+            with an <code>id</code> of <code>video</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#video</code> should have a
+            <code>src</code> attribute.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have a <code>form</code> element with an
+            <code>id</code> of <code>form</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have an <code>input</code> element with an
+            <code>id</code> of <code>email</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#email</code> should be a descendant of the
+            <code>#form</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#email</code> should have the
+            <code>placeholder</code> attribute with placeholder text.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#email</code> should use HTML5 validation by setting its
+            <code>type</code> to <code>email</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >You should have an <code>input</code> element with an
+            <code>id</code> of <code>submit</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#submit</code> should be a descendant of the
+            <code>#form</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#submit</code> should have a <code>type</code> of
+            <code>submit</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#form</code> should have an
+            <code>action</code> attribute of
+            <code>https://www.freecodecamp.com/email-submit</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#email</code> should have a <code>name</code> attribute
+            of <code>email</code>.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your <code>#nav-bar</code> should always be at the top of the
+            viewport.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your Product Landing Page should use at least one media
+            query.</span
+          >
+        </div>
+      </li>
+      <li class="test-result">
+  
+        <div class="test-output">
+<span
+            >Your Product Landing Page should use CSS Flexbox at least
+            once.</span
+          >
+        </div>
+      </li>
+    </ul>
+    </div>
+  </body>
+</html>

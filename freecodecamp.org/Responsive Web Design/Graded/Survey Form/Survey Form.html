@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Just to reload pages automatically to see changes -->
+    <!-- <script>
+    setTimeout(function(){
+        window.location.reload();
+     }, 5000);
+</script> -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Fill Out Now!</p>
+
+    <div id="main">
+        <form action="#" method="post" id="survey-form">
+            <label id="name-label" for="name">Name: </label>
+            <input id="name" name="name" type="text" placeholder="John Patrick" required>
+            <label id="email-label" for="email">Email: </label>
+            <input id="email" name="email" type="email" placeholder="me@mymail.com" required>
+            <label id="number-label" for="age">Age: </label>
+            <input id="number" name="age" type="number" min="0" max="100" placeholder="50">
+
+            <label class="dropdown-label" for="dropdown">Favorite Language : </label>
+            <select id="dropdown" name="fav-language">
+                <option value="" disabled>-- Select One --</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">Javascript</option>
+            </select>
+
+
+            <label class="gender-label">Select Your Gender :<br></label>
+            <input class="radio-box" type="radio" name="gender" id="male" value="M">
+            <label  class="radio-name" for="male">Male</label>
+            <input class="radio-box" type="radio" name="gender" id="female" value="F">
+            <label  class="radio-name" for="male">Female</label>
+
+
+            <label class="preference-label">Your Preference : <br></label>
+            <input class="checkbox-box" type="checkbox" name="frontend" id="frontend" value="FED">
+            <label class="checkbox-name" for="frontend">Front End Developer</label>
+            <input class="checkbox-box" type="checkbox" name="backend" id="backend" value="BED">
+            <label class="checkbox-name" for="frontend">Back End Developer</label>
+            <input class="checkbox-box" type="checkbox" name="fullstack" id="fullstack" value="FSD">
+            <label class="checkbox-name" for="fullstack">Full Stack Developer</label>
+
+            <label id="text-area-label">Short Info : </label>
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Learner or Inspirer"></textarea>
+            <input class="submit" type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

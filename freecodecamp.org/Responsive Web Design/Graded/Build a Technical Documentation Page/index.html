@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          JavaScript is a cross-platform, object-oriented scripting language. It
+          is a small and lightweight language. Inside a host environment (for
+          example, a web browser), JavaScript can be connected to the objects of
+          its environment to provide programmatic control over them.
+        </p>
+      </section>
+      <section class="main-section" id="Requirements">
+        <header>Requirements</header>
+        <ul>
+          <li>
+            A general understanding of the Internet and the World Wide Web (WWW)
+          </li>
+          <li>Good working knowledge of HyperText Markup Language (HTML)</li>
+          <li>
+            Some programming experience. If you are new to programming, try one
+            of the tutorials linked on the main page about JavaScript.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>JavaScript and Java</header>
+        <p>
+          JavaScript and Java are similar in some ways but fundamentally
+          different in some others. The JavaScript language resembles Java but
+          does not have Java's static typing and strong type checking.
+          JavaScript follows most Java expression syntax, naming conventions and
+          basic control-flow constructs which was the reason why it was renamed
+          from LiveScript to JavaScript.
+        </p>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <p>
+          To get started with writing JavaScript, open the Scratchpad and write
+          your first "Hello world" JavaScript code:
+        </p>
+        <code
+          >function greetMe(yourName) { alert("Hello " + yourName); }<br />
+          greetMe("World");</code
+        >
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          You use variables as symbolic names for values in your application.
+          The names of variables, called identifiers, conform to certain rules.
+        </p>
+        <p>
+          A JavaScript identifier must start with a letter, underscore (_), or
+          dollar sign ($); subsequent characters can also be digits (0-9).
+          Because JavaScript is case sensitive, letters include the characters
+          "A" through "Z" (uppercase) and the characters "a" through "z"
+          (lowercase).
+        </p>
+        <p>Ohh It's Empty</p>
+         <p>Ohh It's Empty</p>
+          <p>Ohh It's Empty</p>
+        <p>
+          You can use ISO 8859-1 or Unicode letters such as å and ü in
+          identifiers. You can also use the Unicode escape sequences as
+          characters in identifiers. Some examples of legal names are
+          Number_hits, temp99, and _name.
+        </p>
+        <ol>
+            <li>Declaring Variables: <br><code>var x = 42</code><br><code>let y = 13.
+            </code><br><code>x = 42</code></li>
+            <li>Variable Scope : <br><code>if (true) { var x = 5; } console.log(x); // 5
+            </code><br><code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+                not defined</code></li>
+            <li>Global variables: <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax</p></li>
+        </ol>
+      </section>
+    </main>
+    <nav id="navbar">
+        <header class="navheader">Documentation</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Requirements">Requirements</a>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+            <a class="nav-link" href="#Hello_world">Hello world</a>
+            <a class="nav-link" href="#Variables">Variables</a>
+    </nav>
+  </body>
+</html>
