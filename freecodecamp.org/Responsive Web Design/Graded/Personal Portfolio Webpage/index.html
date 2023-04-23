@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prabesh Aryal : Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">   
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/5de0b21a64.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+<!-- Main Section -->
+      <header id="navbar">
+        <img
+          src=".\Assets\images\logo.svg"
+          alt="Logo stating My Name in Nepali"
+          loading="lazy"
+        />
+        <!-- Svg Ratio must be 60∶17 -->
+        <nav class="navbar">
+          <!-- #navbar element should always be at the top of the viewport.
+ -->
+          <li><a href="#welcome-section">Intro</a></li>
+          <li><a href="#projects">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#footer">Extras</a></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </nav>
+      </header>
+
+<!-- Body Part -->
+      <section class="body-part">
+        <div class="welcome-section" id="welcome-section">
+          <!-- The height of the welcome section should be equal to the height of the viewport -->
+          <img
+            src=".\Assets\images\hi.png"
+            alt="Prabesh Saying Hi"
+            loading="lazy"
+          />
+          <span class="Intro-Text">
+            <p>Hello, It's me!</p>
+            <h1>Prabesh Aryal</h1>
+          </span>
+        </div>
+
+<!-- About Me -->
+        <div class="About-Me" >
+          <h2>About Me</h2>
+          <span>
+            <p>
+              Jan 1, 2001, It was the day, I cried for the first time in
+              this Earth. After that I'm crying everyday :P.
+            </p>
+            <p>Life's too long, Not sure where shall I start it from...</p>
+            <p>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, laudantium dolor magni officiis sed excepturi quae sequi sunt eum tempore animi nulla porro itaque consequuntur quis eligendi odit nostrum tenetur!
+            </p>
+          </span>
+        </div>
+
+
+<!-- Skills Section -->
+        <div class="Skills" id="projects">
+          <h2>Skills</h2>
+          <div class="skills-section">
+            <span class="HTML" id="project-title">
+              <h3>HTML</h3>
+              <div class="fillbar-and-text">
+                <div class="fillbar">
+                  <div class="fill"></div>
+                </div>
+                <p class="percentage">100%</p>
+              </div>
+            </span>
+            <span class="CSS project-tile" id="project-title">
+              <h3>CSS</h3>
+              <div class="fillbar-and-text">
+                <div class="fillbar">
+                  <div class="fill"></div>
+                </div>
+                <p class="percentage">100%</p>
+              </div>
+            </span>
+            <span class="project-title Python project-tile" id="project-title">
+              <h3><a href="python.org">Python</a></h3>
+              <div class="fillbar-and-text">
+                <div class="fillbar">
+                  <div class="fill"></div>
+                </div>
+                <p class="percentage">80%</p>
+              </div>
+            </span>
+            <span class="C" id="project-title">
+              <h3>C</h3>
+              <div class="fillbar-and-text">
+                <div class="fillbar">
+                  <div class="fill"></div>
+
+                </div>
+                <p class="percentage">60%</p>
+              </div>
+            </span>
+          </div>
+        </div>
+
+<!-- COntacts Section -->
+        <div class="contact-me" id="contact">
+          <h2>Contact</h2>
+          <span><p>
+            <a href="tel:000001010">
+              <i class="fa-solid fa-mobile"></i> I am always on Phone.</a>
+            </p>
+            <p>
+              <a href="mailto:emaildoesnotexist@yahoo.com">
+                <i class="fa-solid fa-envelope"></i> Mails are checked every 24 hours</a></p>
+                <p><a href="https://www.google.com/">
+                  <i class="fa-sharp fa-solid fa-location-dot"></i> Come for a Coffee</a></p>
+          </span>
+        <!-- </div>
+            </span> -->
+        </div>
+      </section>
+
+<!-- Footer Section -->
+      <footer id="footer" role="contentinfo">
+        <a
+          href="https://github.com/prabesharyal/"
+          id="profile-link"
+          target="_blank"
+          rel="noopener"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            alt="Github Logo"
+        /></a>
+        <a
+          href="https://www.freecodecamp.org/prabesharyal"
+          id="profile-link"
+          target="_blank"
+          rel="noopener"
+          ><img
+            src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+            alt="freeCodeCamp Logo"
+        /></a>
+      </footer>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,274 @@
+
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Mukta:wght@200&family=Ysabeau:wght@100;200&display=swap');
+
+/* CLear Fix */
+*, ::after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+h1 {
+    font-size: 50pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2 {
+    font-size: 30pt;
+    font-family: Montserrat, sans-serif;
+}
+p {
+    font-family: Ysabeau;
+    font-size: 20pt;
+}
+
+html {
+    background-color: black;
+    color: azure;
+}
+
+body {
+    width: 100%;
+}
+
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    background-color: rgba(110, 110, 110, 0.692) !important;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+#navbar img {
+    max-height: 75px;
+    margin-left: 5%;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : white;
+}
+#navbar li a:hover{
+    color : rgb(2, 255, 129);
+}
+
+.navbar {
+    list-style: none;
+    display: inline-flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+/* Mian Body */
+.body-part{
+    padding-top: 15vh;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.welcome-section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.welcome-section img {
+    border-radius: 50%;
+    max-width: 500px;
+}
+.welcome-section span {
+    border-radius: 50%;
+    padding-left: 10%;
+}
+.Intro-Text p {
+    font-size: 25pt;
+}
+
+.About-Me, .Skills, .contact-me {
+    margin-top: 5%;
+}
+.About-Me, .Skills, .contact-me {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.About-Me span {
+    margin-left: 5%;
+}
+
+
+/* Skills Section */
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+}
+
+#project-title {
+    height: 100px;
+    width: 50vw;
+    max-width: 400px;
+    /* margin: auto; */
+    margin: 2%;
+    padding: 2%;
+    background: linear-gradient(90deg,rgb(1, 77, 107),green);
+    border-radius: 2%;
+}
+
+.fillbar-and-text{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+.fillbar {
+    height: 10px;
+    width: 80%;
+    background: white;
+    overflow: hidden;
+}
+.HTML .fill, .CSS .fill {
+    background: rgb(248, 79, 1);
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.Python .fill{
+    background: rgb(248, 79, 1);
+    height: 10px;
+    width: 80%;
+    overflow: hidden;
+}
+.C .fill {
+    background: rgb(248, 79, 1);
+    height: 10px;
+    width: 60%;
+    overflow: hidden;
+}
+.percentage {
+margin-left: 2%;
+}
+
+
+/* Contact Section */
+.contact-me a {
+    width: 100vw;
+    text-decoration: none !important;
+    font-family: Ysabeau;
+    color: wheat;
+    font-size: 20pt;
+}
+.contact-me span {
+    margin-left: 4%;
+    width: 100rem;
+}
+
+
+/* Footer Section */
+footer {
+    display: inline-flex;
+    width: 50%;
+    margin: 5% 25% 3% 25%;
+    text-align: center;
+    background: rgba(110, 110, 110, 0.692);
+    justify-content: space-around;
+    align-items: center;
+}
+footer img {
+    max-height: 50px;
+    margin:2%, auto, 2%, auto;
+    padding-top: 1%;
+}
+
+
+/* For Mobile View Optimizations */
+@media (max-width:1000px) {
+    /* Navbar Expands on Mobile */
+    #navbar {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #navbar img {
+        width: 90vw;
+        margin-left: 5%;
+    }
+    
+    .navbar {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        width: 40%;
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .navbar li {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Main Body Part FIx */
+    .body-part{
+        padding-top: 5vh;
+        
+    }
+    .welcome-section {display: block;}
+    .welcome-section img {
+        border-radius: 50%;
+        max-width: 200px;
+    }
+    .About-Me, .Skills, .contact-me {
+        display: block;
+        text-align: center;
+    }
+    .About-Me span {
+        text-align: justify;
+    }
+
+    /* Skills Part Fix */
+    .skills-section {margin : auto;}
+    #project-title {
+        margin: auto;
+        margin-top: 3%;
+    }
+    
+    .percentage {
+    margin-left: 2%;
+    }
+
+    .contact-me a {
+        font-size: 15pt;
+    }
+
+    footer img {
+        max-width: 100px;
+        max-height: 30px;
+        margin:2%, 2%, 2%, 2%;
+        padding-top: 1%;
+    }
+
+
+
+}
