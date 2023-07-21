@@ -1,0 +1,17 @@
+
+.custom-border {
+  border: 5px solid white;
+  transition: border-color 0.5s ease;
+}
+.quote-text {
+  color: white;
+  transition: color 0.5s ease;
+}
+.quote-author {
+  color: white;
+  transition: color 0.5s ease;
+}
+.twitter-icon {
+  color: white;
+  transition: color 0.5s ease;
+}

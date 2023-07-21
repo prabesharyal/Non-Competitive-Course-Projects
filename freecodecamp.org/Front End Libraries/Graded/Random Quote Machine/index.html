@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body class="bg-black position-relative overflow-hidden">
+    <div class="position-absolute top-50 start-50 translate-middle p-5 custom-border" id="quote-box">
+        <span class="d-flex justify-content-center">
+          <i class="fa-solid fa-quote-left" style="color: grey !important;"></i>
+          <p id="text" class="m-2 quote-text"></p>
+          <i class="fa-solid fa-quote-right" style="color: grey;"></i>
+        </span>
+        <span class="d-flex justify-content-end me-5">
+          ✍️ <div style="width:5px;"></div><p class="quote-author" id="author"></p>
+        </span>
+        <span class="d-flex justify-content-between position-relative">
+          <button id="new-quote" class="btn btn-outline-success">Get New Quote</button>
+          <a class="position-absolute top-50 start-100 translate-middle" href="https://twitter.com/intent/tweet" target="_blank" id="tweet-quote">
+            <i class="fa-brands fa-twitter fa-2xl twitter-icon"></i>
+          </a>
+        </span>
+      </div>
+
+
+    </div>
+ <script src="script.js"></script>
+ <script src="https://kit.fontawesome.com/5de0b21a64.js" crossorigin="anonymous"></script>
+ <footer class="position-absolute top-100 start-50 translate-middle"><div class="d-flex justify-content-center" style="margin:-50px;"><i class="fa-solid fa-copyright"></i><div style="width:2px;"></div><p>Prabesh Aryal</p></div></footer>
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
