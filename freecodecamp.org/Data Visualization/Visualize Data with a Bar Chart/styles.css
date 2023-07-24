@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container styles */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  #title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .allContent {
+    border: 1px solid #444;
+    padding: 20px;
+    background-color: #333;
+    position: relative; /* Added position relative */
+  }
+  
+  /* SVG styles */
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .info {
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+  }
+  
+  /* Bar styles */
+  .bar {
+    fill: red; /* Updated the chart color to red */
+  }
+  
+  /* Tooltip styles */
+  #tooltip {
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    background-color: yellow; /* Updated the overlay color to yellow */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media screen and (max-width: 768px) {
+    .main {
+      padding: 10px;
+    }
+  
+    .allContent {
+      padding: 10px;
+    }
+  
+    svg {
+      width: 100%;
+    }
+  }
+  

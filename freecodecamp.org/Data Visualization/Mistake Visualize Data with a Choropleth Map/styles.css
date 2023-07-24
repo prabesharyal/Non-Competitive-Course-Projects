@@ -1,0 +1,40 @@
+body {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+.chloroplethapp {
+  border: 1px solid #555;
+  background-color: #222;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+h1, h3 {
+  color: #fff;
+}
+
+#tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  padding: 8px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#legend {
+  fill: #fff;
+}
+
+.county {
+  stroke: #333;
+  stroke-width: 0.5;
+}
+
+.legend-text {
+  fill: #fff;
+}

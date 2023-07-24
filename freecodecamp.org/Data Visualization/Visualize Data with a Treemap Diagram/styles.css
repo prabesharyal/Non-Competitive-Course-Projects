@@ -1,0 +1,57 @@
+body {
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  
+  #tree-map {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 14px;
+  }
+  
+  .tile {
+    stroke: #fff;
+  }
+  
+  .tile-text {
+    font-size: 10px;
+    fill: #000;
+  }
+  
+  .legend-item {
+    stroke: #fff;
+  }
+  
+  #legend {
+    display: block;
+  background: #eee;
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,102 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .allContent {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 100px 60px 30px 60px;
+    text-align: center;
+  }
+  
+  #title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  #subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  svg {
+    width: 100%;
+    height: 630px;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #666;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis .tick line,
+  .y.axis .tick line {
+    stroke: #666;
+  }
+  
+  .x.axis-label,
+  .y.axis-label {
+    font-size: 16px;
+    fill: #fff;
+  }
+  
+  .dot {
+    fill: rgb(0, 255, 115);
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .dot:hover {
+    opacity: 1;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  
+  /* Legend styles */
+  #legend {
+    font-size: 16px;
+    fill: #fff;
+    text-anchor: end;
+  }
+  
+  .legend-label {
+    cursor: pointer;
+    transform-origin: right center;
+  }
+  
+  .legend-label rect {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media screen and (max-width: 768px) {
+    .allContent {
+      padding: 50px 30px 20px 30px;
+    }
+  
+    #title {
+      font-size: 24px;
+    }
+  
+    #subtitle {
+      font-size: 18px;
+    }
+  }
+  

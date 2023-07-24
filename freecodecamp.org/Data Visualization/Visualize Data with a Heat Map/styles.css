@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark background color */
+  color: #fff; /* Text color */
+  position: relative;
+}
+
+#heatmap {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.cell {
+  stroke: #1a1a1a; /* Stroke color for cells */
+  stroke-width: 1px;
+}
+
+#title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px; /* Increase font size for title */
+}
+
+#description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  display: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#heatmap {
+  background-color: #292929; /* Darker background color for the heat map */
+}
+
+#x-axis text,
+#y-axis text {
+  fill: #ccc; /* Color for axis labels */
+}
+
+#legend text {
+  fill: #ccc; /* Color for legend labels */
+}
+
+#legend rect {
+  stroke: #292929; /* Stroke color for legend rectangles */
+  stroke-width: 1px;
+}
+
