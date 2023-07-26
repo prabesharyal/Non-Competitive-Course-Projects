@@ -1,6 +1,19 @@
-**/*.svg
-**/*.png
-**/*.jpeg
-**/assets
-**/Designs
-**/*fullcode.py
+/**/*.svg
+/**/*.png
+/**/*.jpeg
+/**/assets/
+/**/Designs/
+/**/fullcode.py
+
+# Directories to ignore
+/**/.cache/
+/**/.config/
+/**/.git/
+/**/.upm/
+/**/node_modules/
+
+# Files to ignore
+/**/.gitignore
+/**/.replit
+/**/replit.nix
+/**/replit_zip_error_log.txt
