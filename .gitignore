@@ -13,6 +13,7 @@
 /**/node_modules/
 
 # Files to ignore
+/**/*.env
 /**/.gitignore
 /**/.replit
 /**/replit.nix
