@@ -1,0 +1,109 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font and background color for the whole document */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  background-color: #222;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Common container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Main section styles */
+section {
+  margin-bottom: 20px;
+}
+
+/* Section title styles */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #444;
+  color: #f0f0f0;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #222;
+  color: #f0f0f0;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Issue display styles */
+.issue {
+  background-color: #444;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+.issue h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.issue p {
+  margin-bottom: 5px;
+}
+
+.issue .id {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.issue a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.issue .open {
+  border-left: 3px solid #4caf50;
+}
+
+.issue .closed {
+  border-left: 3px solid #f44336;
+}

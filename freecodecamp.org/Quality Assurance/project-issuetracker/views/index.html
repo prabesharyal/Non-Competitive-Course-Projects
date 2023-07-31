@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Issue Tracker</title>
+  <link rel="icon" type="image/png" href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <header>
+    <h1>Issue Tracker</h1>
+  </header>
+  <main class="container">
+    <section>
+      <h3>Example <code>GET</code> usage</h3>
+      <code>/api/issues/{project}</code><br>
+      <code>/api/issues/{project}?open=true&amp;assigned_to=Joe</code>
+    </section>
+    <section>
+      <h3>Example return</h3>
+      <pre>
+<code>[
+  {
+    "_id": "5871dda29faedc3491ff93bb",
+    "issue_title": "Fix error in posting data",
+    "issue_text": "When we post data it has an error.",
+    "created_on": "2017-01-08T06:35:14.240Z",
+    "updated_on": "2017-01-08T06:35:14.240Z",
+    "created_by": "Joe",
+    "assigned_to": "Joe",
+    "open": true,
+    "status_text": "In QA"
+  },
+  ...
+ ]
+</code>
+      </pre>
+    </section>
+    <section id="testui">
+      <h3>Examples</h3>
+      <p>Go to <a href="/api/issues/apitest/">/api/issues/apitest/</a> project</p>
+      <h2 class="section-title">API Tests</h2>
+      <h3>Submit issue on <i>apitest</i></h3>
+      <form id="testForm" class="border">
+        <input type="text" name="issue_title" placeholder="*Title" required="">
+        <textarea type="text" name="issue_text" placeholder="*Text" required=""></textarea>
+        <input type="text" name="created_by" placeholder="*Created by" required="">
+        <input type="text" name="assigned_to" placeholder="(opt)Assigned to">
+        <input type="text" name="status_text" placeholder="(opt)Status text">
+        <button type="submit">Submit Issue</button>
+      </form>
+      <h3>Update issue on <i>apitest</i> (Change any or all to update issue on the _id supplied)</h3>
+      <form id="testForm2" class="border">
+        <input type="text" name="_id" placeholder="*_id" required="">
+        <input type="text" name="issue_title" placeholder="(opt)Title">
+        <textarea type="text" name="issue_text" placeholder="(opt)Text"></textarea>
+        <input type="text" name="created_by" placeholder="(opt)Created by">
+        <input type="text" name="assigned_to" placeholder="(opt)Assigned to">
+        <input type="text" name="status_text" placeholder="(opt)Status text">
+        <label><input type="checkbox" name="open" value="false"> Check to close issue</label>
+        <button type="submit">Submit Issue</button>
+      </form>
+      <h3>Delete issue on <i>apitest</i></h3>
+      <form id="testForm3" class="border">
+        <input type="text" name="_id" placeholder="_id" required="">
+        <button type="submit">Delete Issue</button>
+      </form>
+      <code id="jsonResult"></code>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <!-- Footer content here -->
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+  <script src="https://l.prabesharyal.info.np/mylogocdn"></script>
+
+</body>
+</html>
