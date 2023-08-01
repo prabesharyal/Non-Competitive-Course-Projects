@@ -5,6 +5,7 @@ const server = require("../server");
 chai.use(require("chai-http"));
 
 suite("Functional Tests", function () {
+  this.timeout(5000);
   test("Convert valid input", function (done) {
     chai
       .request(server)

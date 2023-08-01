@@ -3,6 +3,7 @@ const assert = chai.assert;
 const ConvertHandler = require("../controllers/convertHandler.js");
 
 suite("Unit Tests", function () {
+  this.timeout(2000);
   const convertHandler = new ConvertHandler();
 
   test("Whole number input", function () {

@@ -69,6 +69,3 @@ class Translator {
 }
 
 module.exports = Translator;
-const translator = new Translator();
-const input = "chip shop"
-console.log(translator.translate(input, 'br'));

@@ -16,7 +16,7 @@ suite('Functional Tests', () => {
       const issue = new Issue({
         issue_title: 'Test issue',
         issue_text: 'Test issue text',
-        created_by: 'kibar',
+        created_by: 'Prabesh',
         assigned_to: 'Test user',
         status_text: 'Test status',
         open: true,
@@ -276,3 +276,8 @@ suite('Functional Tests', () => {
     });
   });
 });
+
+// after(function() {
+//   chai.request(server)
+//     .get('/')
+//   });

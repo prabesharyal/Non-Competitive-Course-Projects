@@ -184,3 +184,9 @@ suite("Functional Tests", () => {
     });
   });
 });
+
+
+after(function() {
+  chai.request(server)
+    .get('/')
+});
