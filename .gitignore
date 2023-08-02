@@ -1,6 +1,7 @@
 /**/*.svg
 /**/*.png
 /**/*.jpeg
+/**/*.mjs
 /**/assets/
 /**/Designs/
 /**/fullcode.py
